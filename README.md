@@ -14,21 +14,6 @@ Tutorial by freeCodeCamp: https://www.youtube.com/watch?v=DKlTBBuc32
 - Create subreddit, view subreddit, voting, etc.
 - User profile management
 
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-- [AngularJS](https://angularjs.org/)
-- [Spring Boot](https://spring.io/projects/spring-boot)
-- [VSCode](https://code.visualstudio.com/)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-- [node.js](https://nodejs.org/en/)
-- [MySQL Workbench](https://www.mysql.com/products/workbench/)
-- [Git](https://git-scm.com/)
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 ## Installation
 
 - Modify **application.properties** 
@@ -53,3 +38,17 @@ jwt.expiration.time=900000
 ```
 
 - Compile & Run
+
+## Software, Languages, Framework, etc.
+
+- [AngularJS](https://angularjs.org/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [VSCode](https://code.visualstudio.com/)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [node.js](https://nodejs.org/en/)
+- [MySQL Workbench](https://www.mysql.com/products/workbench/)
+- [Git](https://git-scm.com/)
+
+
+## Authors
+- Krishan Patel
