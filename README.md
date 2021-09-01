@@ -35,7 +35,7 @@ And of course Dillinger itself is open source with a [public repository][dill]
 ```sh
 ###### Database Properties  ###########################################
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/project-name-here?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+spring.datasource.url=jdbc:mysql://localhost:3306/db-name-here?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
 spring.datasource.username=
 spring.datasource.password=
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
