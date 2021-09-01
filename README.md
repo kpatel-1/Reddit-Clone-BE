@@ -10,8 +10,8 @@ Tutorial by freeCodeCamp: https://www.youtube.com/watch?v=DKlTBBuc32
 ## Features
 
 - Authentication, refresh tokens, password encryption, etc.
-- Homepage, View posts, create posts, create threads, etc.
-- Create subreddit, view subreddit, Upvoting, downvoting etc.
+- Homepage, view posts, create posts, create threads, etc.
+- Create subreddit, view subreddit, voting, etc.
 - User profile management
 
 ## Tech
