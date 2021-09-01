@@ -1,22 +1,21 @@
-  
-package com.example.springredditclone.model;
+  package com.example.springredditclone.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+  import lombok.AllArgsConstructor;
+  import lombok.Data;
+  import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import java.time.Instant;
+  import javax.persistence.*;
+  import javax.validation.constraints.NotEmpty;
+  import java.time.Instant;
 
-import static javax.persistence.FetchType.LAZY;
-import static javax.persistence.GenerationType.IDENTITY;
+  import static javax.persistence.FetchType.LAZY;
+  import static javax.persistence.GenerationType.IDENTITY;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Entity
-public class Comment {
+  @Data
+  @AllArgsConstructor
+  @NoArgsConstructor
+  @Entity
+  public class Comment {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
@@ -29,4 +28,4 @@ public class Comment {
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
-}
+  }

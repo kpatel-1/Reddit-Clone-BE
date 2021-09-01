@@ -1,4 +1,3 @@
-
 package com.example.springredditclone.model;
 
 import lombok.AllArgsConstructor;

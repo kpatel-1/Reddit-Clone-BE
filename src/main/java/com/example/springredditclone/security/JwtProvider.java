@@ -41,20 +41,20 @@ public class JwtProvider {
     public String generateToken(Authentication authentication) {
         org.springframework.security.core.userdetails.User principal = (User) authentication.getPrincipal();
         return Jwts.builder()
-                .setSubject(principal.getUsername())
-                .setIssuedAt(from(Instant.now()))
-                .signWith(getPrivateKey())
-                .setExpiration(Date.from(Instant.now().plusMillis(jwtExpirationInMillis)))
-                .compact();
+            .setSubject(principal.getUsername())
+            .setIssuedAt(from(Instant.now()))
+            .signWith(getPrivateKey())
+            .setExpiration(Date.from(Instant.now().plusMillis(jwtExpirationInMillis)))
+            .compact();
     }
 
     public String generateTokenWithUserName(String username) {
         return Jwts.builder()
-                .setSubject(username)
-                .setIssuedAt(from(Instant.now()))
-                .signWith(getPrivateKey())
-                .setExpiration(Date.from(Instant.now().plusMillis(jwtExpirationInMillis)))
-                .compact();
+            .setSubject(username)
+            .setIssuedAt(from(Instant.now()))
+            .signWith(getPrivateKey())
+            .setExpiration(Date.from(Instant.now().plusMillis(jwtExpirationInMillis)))
+            .compact();
     }
 
     private PrivateKey getPrivateKey() {
@@ -75,15 +75,15 @@ public class JwtProvider {
             return keyStore.getCertificate("springblog").getPublicKey();
         } catch (KeyStoreException e) {
             throw new SpringRedditException("Exception occured while " +
-                    "retrieving public key from keystore");
+                "retrieving public key from keystore");
         }
     }
 
     public String getUsernameFromJwt(String token) {
         Claims claims = parser()
-                .setSigningKey(getPublickey())
-                .parseClaimsJws(token)
-                .getBody();
+            .setSigningKey(getPublickey())
+            .parseClaimsJws(token)
+            .getBody();
 
         return claims.getSubject();
     }

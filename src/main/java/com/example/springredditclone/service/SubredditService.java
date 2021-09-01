@@ -30,16 +30,16 @@ public class SubredditService {
     }
 
     @Transactional(readOnly = true)
-    public List<SubredditDto> getAll() {
+    public List < SubredditDto > getAll() {
         return subredditRepository.findAll()
-                .stream()
-                .map(subredditMapper::mapSubredditToDto)
-                .collect(toList());
+            .stream()
+            .map(subredditMapper::mapSubredditToDto)
+            .collect(toList());
     }
 
     public SubredditDto getSubreddit(Long id) {
         Subreddit subreddit = subredditRepository.findById(id)
-                .orElseThrow(() -> new SpringRedditException("No subreddit found with ID - " + id));
+            .orElseThrow(() -> new SpringRedditException("No subreddit found with ID - " + id));
         return subredditMapper.mapSubredditToDto(subreddit);
     }
 }

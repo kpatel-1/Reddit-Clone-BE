@@ -16,7 +16,7 @@ public class SubredditController {
     private final SubredditService subredditService;
 
     @GetMapping
-    public List<SubredditDto> getAllSubreddits() {
+    public List < SubredditDto > getAllSubreddits() {
         return subredditService.getAll();
     }
 
