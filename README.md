@@ -18,22 +18,20 @@ Tutorial by freeCodeCamp: https://www.youtube.com/watch?v=DKlTBBuc32
 
 Dillinger uses a number of open source projects to work properly:
 
-- [AngularJS]
+- [AngularJS](https://angularjs.org/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [VSCode](https://code.visualstudio.com/)
 - [IntelliJ IDEA](https://code.visualstudio.com/)
 - [node.js]
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 - [Git](https://git-scm.com/)
-- [Breakdance](https://breakdance.github.io/breakdance/)
-- [jQuery]
 
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
 ## Installation
 
-Modify **application.properties** 
+- Modify **application.properties** 
 ```sh
 ###### Database Properties  ###########################################
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
@@ -54,4 +52,4 @@ spring.mail.protocol=smtp
 jwt.expiration.time=900000
 ```
 
-Compile & Run
+- Compile & Run
