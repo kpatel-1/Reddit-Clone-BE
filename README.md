@@ -21,8 +21,8 @@ Dillinger uses a number of open source projects to work properly:
 - [AngularJS](https://angularjs.org/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [VSCode](https://code.visualstudio.com/)
-- [IntelliJ IDEA](https://code.visualstudio.com/)
-- [node.js]
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [node.js](https://nodejs.org/en/)
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 - [Git](https://git-scm.com/)
 
