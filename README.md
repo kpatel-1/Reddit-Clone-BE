@@ -1,5 +1,5 @@
 # Spring Boot & AngularJS Reddit Clone
-### Back End (Sprint Boot)
+### Back End (Spring Boot)
 
 
 
